@@ -20,7 +20,7 @@ export const App = () => {
 
   const reset = () => {
     setSelectedGood('');
-  }
+  };
 
   const title = selectedGood
     ? `${selectedGood} is selected`
@@ -35,7 +35,7 @@ export const App = () => {
             data-cy="ClearButton"
             type="button"
             className="delete ml-3"
-            onClick={() => reset}
+            onClick={reset}
           />
         ) : null}
       </h1>
@@ -56,7 +56,7 @@ export const App = () => {
                     data-cy="RemoveButton"
                     type="button"
                     className="button is-info"
-                    onClick={() => reset}
+                    onClick={reset}
                   >
                     -
                   </button>
